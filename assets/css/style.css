@@ -1,0 +1,17 @@
+/* Importando a fonte Pretendard que está sendo usada no projeto */
+@font-face {
+  font-family: 'Pretendard';
+  src: url(../font/PretendardVariable.ttf);
+}
+
+/* Variáveis que serão usadas para estilização do projeto */
+:root{
+  --white: #E7E7E7;
+  --black: #171717;
+}
+
+body{
+  font-family: 'Pretendard', sans-serif;
+  background: var(--black);
+  color: var(--white);
+}

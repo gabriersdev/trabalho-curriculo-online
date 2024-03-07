@@ -1,0 +1,7 @@
+/* Reset básico dos elementos HTML */
+* {
+  /* Removendo margin, padding padrão e definindo a propriedade box-sizing com o valor border-box */
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
