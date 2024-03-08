@@ -30,6 +30,11 @@ body{
 }
 
 .nav{
+  @media screen and (width >= 525px) {
+    position: sticky;
+    top: 0;
+  }
+
   padding: 2rem 0;
   display: flex;
   justify-content: space-between;
@@ -37,6 +42,8 @@ body{
   flex-wrap: wrap;
   row-gap: 1rem;
   column-gap: 0.5rem;
+  background: var(--black);
+  z-index: 1;
 
   .nav-links{
     display: flex;
@@ -78,18 +85,17 @@ body{
 }
 
 .header{
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px dashed var(--darkblue);
 }
 
 .main{
-  margin-top: 2rem;
-  padding: 1.5rem 0;
   display: grid;
+  padding-bottom: 3rem;
 }
 
 main section{
-  padding: 2rem 0;
+  padding-block-start: 7rem;
 }
 
 .title-h2{
