@@ -222,6 +222,13 @@ h1{
   }
 }
 
+.project{
+  .button{
+    display: inline-block;
+    margin-top: 2rem;
+  }
+}
+
 .projects{
   margin-top: 2.5rem;
   display: grid;
@@ -243,12 +250,14 @@ h1{
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 2px 2px 5px 1px #00000025;
-  transition: scale 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   place-items: center;
+  align-items: stretch;
 
   .title{
+    text-align: left;
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -268,10 +277,10 @@ h1{
     margin-top: 1.25rem;
     margin-bottom: 0;
     line-height: normal;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   &:hover{
-    transform: scale(1.05);
+    background: #3D3D3D;
   }
 }
