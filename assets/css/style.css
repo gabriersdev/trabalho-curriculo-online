@@ -284,6 +284,8 @@ body{
     
     /* Estiliza input e textarea */
     .input, .textarea{
+      display: block;
+      width: 100%;
       font-family: inherit;
       font-size: inherit;
       background-color: var(--grey);
@@ -316,6 +318,7 @@ body{
   gap: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: left;
 }
 
 /* Altera opacidade do último elemento <p> do rodapé */
