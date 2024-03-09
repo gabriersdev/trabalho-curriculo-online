@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Linguagem da página-->
+<html lang="pt-br">
 <head>
+  <!-- Definindo propriedades meta que serão lidas pelo navegador -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Informações do projeto -->
+  <meta name="author" content="Gabriel Ribeiro">
+  <meta name="description" content="Currículo online do Gabriel. Conheça um pouco sobre ele, as formações e atribuições e os projetos que já desenvolveu!">
+
+  <!-- Título da página -->
   <title>Currículo online do Gabriel</title>
   
+  <!-- Importando arquivos CSS -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/reset.css">
 </head>
 <body>
-  
-  <div class="container">  
+
+  <!-- Conteúdo -->
+  <div class="container" id="top">  
     <header class="header">
       <h1 class="header-title">Currículo online</h1>
     </header>
 
+    <!-- Nav - menu para navegar entre as seções da página -->
     <nav class="nav">
       <ul class="nav-links">
+        <!-- Links são itens da lista. Atributo role é para acessibilidade com leitores de tela e define o escopo do elemento -->
+        <!-- Aqui, os links que redirecionam para áreas da página são como botões -->
         <li class="nav-link"><a class="link active" href="#about" role="button" title="Sobre mim">Sobre mim</a></li>
         <li class="nav-link"><a class="link" href="#formation" role="button" title="Formação">Formação</a></li>
         <li class="nav-link"><a class="link" href="#project" role="button" title="Projetos">Projetos</a></li>
         <li class="nav-link"><a class="link" href="#contact" role="button" title="Contato">Contato</a></li>
       </ul>
 
-      <a href="https://github.com/gabrieszin/" class="link social" rel="noreferrer noopener" role="button" title="Acessar meu repositório">
+
+      <a href="https://github.com/gabrieszin/" class="link social" rel="noreferrer noopener nofollow" role="button" title="Acessar meu repositório">
         <picture>
           <source srcset="./assets/img/github.svg" type="image/svg+xml">
           <img class="image" src="./assets/img/github.png" alt="Github">
@@ -32,8 +45,11 @@
       </a>
     </nav>
     
+    <!-- Conteúdo principal da página -->
     <main class="main">
+      <!-- Seções da página -->
       <section class="about" id="about">
+        <!-- Título da seção -->
         <a href="#about" class="unvisible-link" role="button" style="outline: none;"><h2 class="title-h2">Sobre mim</h2></a>
         
         <p class="text">Olá, meu nome é <strong>Gabriel</strong>, sou desenvolvedor WEB e estou em busca de novos desafios. Sou <mark class="mark">apaixonado por tecnologia e estou sempre em busca de novos conhecimentos.</mark> Dedicado desde pequeno, sempre busco dar o meu melhor em tudo o que faço e na programação não é diferente.</p>
@@ -42,16 +58,19 @@
       </section>
       
       <section id="formation">
+        <!-- Título da seção -->
         <a href="#formation" class="unvisible-link" role="button" style="outline: none;"><h2 class="title-h2">Formação</h2></a>
         
         <p class="text">Atualmente estou <mark class="mark">cursando o tecnólogo de Análise e Desenvolvimento de Sistemas na Faculdade Uninter.</mark> Mas também sou formado como Técnico em Informática para a Internet pela Escola Estadual Técnico Industrial Professor Fontes.</p>
       </section>
       
       <section class="project" id="project">
+        <!-- Título da seção -->
         <a href="#project" class="unvisible-link" role="button" style="outline: none;"><h2 class="title-h2">Projetos</h2></a>
         
         <div class="projects">
-          <a href="https://gabrieszin.github.io/cca" rel="noopener noreferrer" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
+          <!-- Projetos. Cada um é um link -->
+          <a href="https://gabrieszin.github.io/cca" rel="noopener noreferrer nofollow" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
             <h3 class="title">CCA</h3>
 
             <picture>
@@ -65,7 +84,7 @@
             </div>
           </a>
           
-          <a href="https://gabrieszin.github.io/calculadora-tempo-de-servico/" rel="noopener noreferrer" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
+          <a href="https://gabrieszin.github.io/calculadora-tempo-de-servico/" rel="noopener noreferrer nofollow" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
             <h3 class="title">Calculadora de tempo de serviço</h3>
 
             <picture>
@@ -79,7 +98,7 @@
             </div>
           </a>
 
-          <a href="https://gabrieszin.github.io/random-password/" rel="noopener noreferrer" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
+          <a href="https://gabrieszin.github.io/random-password/" rel="noopener noreferrer nofollow" role="banner" class="card-project unvisible-link" title="Acessar o projeto">
             <h3 class="title">Gerador de senhas</h3>
 
             <picture>
@@ -94,12 +113,14 @@
           </a>
         </div>
 
-        <a href="https://github.com/gabrieszin?tab=repositories" rel="noopener noreferrer" role="button" class="button unvisible-link">Veja mais no meu repositório</a>
+        <a href="https://github.com/gabrieszin?tab=repositories" rel="noopener noreferrer nofollow" role="button" class="button unvisible-link">Veja mais no meu repositório</a>
       </section>
       
       <section id="contact">
+        <!-- Título da seção -->
         <a href="#contact" class="unvisible-link" role="button" style="outline: none;"><h2 class="title-h2">Contato</h2></a>
         
+        <!-- Formulário de contato -->
         <form class="form" action="#" method="POST">
           <div class="form-group">
             <label for="name" class="label">Nome</label>
@@ -116,11 +137,16 @@
             <textarea name="message" id="message" rows="3" class="textarea" spellcheck="on" autocomplete="off" placeholder="Aqui você escreve sua mensagem..." required></textarea>
           </div>
 
+          <!-- Botão para envio dos dados do form -->
           <button type="submit" class="button">Enviar</button>
         </form>
       </section>
     </main>
+
+    <!-- Botão para subir a página -->
+    <a href="#top" role="button" title="Subir" class="button unvisible-link button-up-page" style="padding-top: 0.5rem;">🡹</a>
   
+    <!-- Rodapé da página -->
     <footer class="footer">
       <p>Desenvolvido por <b>Gabriel</b></p>
       <p>&copy; 2024 Todos os direitos reservados</p>
