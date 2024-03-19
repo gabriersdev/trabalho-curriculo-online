@@ -1,7 +1,7 @@
 /* Importando a fonte Pretendard que está sendo usada no projeto */
 @font-face {
-  font-family: 'Pretendard';
-  src: url(../font/PretendardVariable.ttf);
+  font-family: 'Pretendard'; /* Nome da fonte */
+  src: url(../font/PretendardVariable.ttf); /* Caminho para o arquivo da fonte */
 }
 
 /* Variáveis que serão usadas para estilização do projeto */
